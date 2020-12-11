@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
+/* font-family: 'Roboto Slab', serif; */
+
+/* mobile first */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Roboto', sans-serif; 
+    line-height: 1.5;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+@media (min-width: 768px)  {.container {max-width: 720px;}}
+@media (min-width: 1200px) {.container {max-width: 1120px;}}
+@media (min-width: 1400px) {.container {max-width: 1320px;}}
+@media (min-width: 1920px) {.container {max-width: 1410px;}}
+
+
+a {
+    color: #2baaec;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #25e6c8;
+}
+
+.btnmenu {
+    display: inline-flex;
+    font-weight: 300;
+    text-align: center;
+    vertical-align: middle;
+    padding: 1.25rem, 1.75rem;
+    border-radius: 0.75rem;  
+    border: 1px solid transparent;
+    background-color: transparent;
+    font-size: 1rem;
+}
+
+.hr {
+    height: 0.25rem;
+    background-color: #25e6c8;
+    border: none;
+    margin: 1rem 0 2rem;
+}
+
+#back-to-top {
+    position: fixed;
+    right: 2%;
+    bottom: 5%;
+}
+
+.circle {  
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    height: 50px;
+    width: 50px;
+    background-color: #2baaec;
+    color: white;
+}
+
+.circle:hover { 
+    background-color: #25e6c8;
+}
+
+
+
+
+/* top menu */
+#topmenu {
+    display: none;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+@media (min-width: 768px) {#topmenu {display: block;}}
+
+#topmenu .container {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+}
+
+#topmenu .hours {
+    flex: 2; 
+    font-size: 1rem;
+}
+
+#topmenu .hours i {
+    color: #2baaec;
+    margin-right: 0.3rem;
+    font-size: 1.1rem;
+    margin-top: 0.3rem;
+}
+
+#topmenu .socialmedia  {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;  
+}
+
+#topmenu .socialmedia li {
+    list-style: none;
+    margin-left: 1.3rem;
+}
+
+
+
+/* mainmenu */
+#mainmenu {
+    position: sticky;
+    font-family: 'Roboto Slab', serif;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #ffffff;
+
+    top: 0;
+}
+@media (min-width: 768px) {#mainmenu {font-size: 1.125rem; padding-top: 3.125rem; padding-bottom: 3.125rem;}}
+
+#mainmenu .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#mainmenu .logo {
+    width: 150px;
+    height: auto;
+}
+@media (min-width: 768px) {#mainmenu .logo {width: 240px;  height: auto;}} 
+
+#mainmenu .menu {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+#mainmenu ul {
+    display: none;
+    list-style: none;
+    margin: 0;
+}
+@media (min-width:992px) {#mainmenu ul {display: flex;}} 
+
+#mainmenu .menu li {
+    margin-left: 2rem;
+} 
+
+#mainmenu  li a {
+    color:  #363636;
+}
+
+#mainmenu li a:hover {
+    color:  #25e6c8;
+}
+
+#mainmenu button {
+    font-size: 1.5rem;
+}
+@media (min-width: 992px) {#mainmenu button {display: none;}}
+
+
+
+
+/* showcase */
+#showcase {
+    background-color: #DEDEDE;
+}
+
+#showcase .container {
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    text-align: center;
+}
+@media (min-width:992px) {#showcase .container {text-align: left;}}
+
+#showcase img {
+    display: none;
+    margin-top: 1.3rem;
+  
+}
+@media (min-width:992px) {#showcase img {
+    display: block;
+    height: 400px;
+}}
+@media (min-width:1200px) {#showcase img {
+    height: 680px; 
+    margin-left: -47px;   
+}}
+
+#showcase .our-clinic { 
+    margin-top: 3rem;
+    margin-bottom: 3rem; 
+}
+@media (min-width:768px) {#showcase .our-clinic {margin-left: 0.5rem; }}
+@media (min-width:1200px) {#showcase .our-clinic {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    margin-left: 9.5rem;  
+}}
+
+#showcase  h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+@media (min-width:1200px) {#showcase  h1 {font-size: 3.75rem;}}
+
+#showcase p {
+    font-size: 1.125rem;
+}
+
+#showcase button {
+    border-radius: 0.4rem; 
+    width: 8rem;
+    padding: 0.5rem 0.8rem;
+    color: #ffffff;
+    background-color:  #25e6c8;
+    border: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+
+}
+@media (min-width:768px) {#showcase button {
+    font-size: 1.1rem;
+    width: 15rem;
+    padding: 0.9rem 2rem;
+}}
+
+#showcase button:hover {
+    background-color: #2baaec;
+}
+
+
+
+/* about us */
+ #about-us {
+     background-color: #ffffff;
+ }
+ 
+ #about-us .container {
+     display: flex;
+     justify-content: space-between;
+     margin-top: 5.5rem;
+ }
+
+ #about-us .about {
+     text-align: center;
+ }
+@media (min-width:1200px) {#about-us .about {
+    width: 44rem;
+    text-align: left;
+    margin-top: 2rem;   
+}}
+ 
+
+ #about-us  h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 0;
+    
+ }
+@media (min-width:1200px) { #about-us  h1 {margin-right: 5rem;}}
+ #about-us  p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.125rem;
+    padding-top: 1rem;
+ }
+
+ #about-us .container .about ul {
+     list-style: none;
+     padding: 0;   
+ }
+ @media (min-width:768px) { #about-us ul {
+    display: flex;
+    justify-content: space-between;
+ }}
+ @media (min-width:1200px) { #about-us ul {
+    margin-right: 8rem;
+ }}
+
+
+ #abuot-us ul li {
+    margin-left: 5rem;
+ }
+
+ #about-us ul li h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #2baaec;
+    margin-bottom: 0;
+    margin-top: 3rem;
+    margin-right: 0;
+ }
+
+ #about-us ul li p {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    margin-top: 0;
+    padding-top: 0;
+ }
+
+ #about-us img {
+     display: none;  
+ }
+@media (min-width:1200px) { #about-us img {
+    height: 724px;
+    display:block ;
+}}
+
+
+
+/* services */
+#services {  
+    background-color: #F7F7F7;  
+    padding-top: 2rem; 
+    padding-bottom: 2rem;  
+}
+@media (min-width:992px) {#services { padding-top: 10rem; padding-bottom: 10rem; }}
+
+.service-box {
+    background-color: #ffff;
+    border-radius: 10px;
+    padding: 4.38rem 4.33rem; 
+    border-radius: 0.5rem;
+    transition: all 0.3s ease-in-out; 
+}
+
+.img  { 
+    display: flex; 
+    justify-content: center;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    background-color:#25e6c8;
+    margin: auto;
+    transition: all 0.3s ease-in-out; 
+}
+
+#services .service-box:hover {
+    box-shadow: 6px 6px 10px #e2e0e0;
+}
+
+#services .service-box:hover > .img {  
+    background-color: #2baaec;
+}
+
+.title h1 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin: 0;  
+}
+.service-box h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.37rem;
+    font-weight: 400;
+    margin-top: 3rem;
+}
+.service-box p {
+    font-size: 1.125rem;
+    margin-bottom: 0;
+}
+
+#services .container  {   
+    display: grid;  
+    grid-template-columns: 1fr;  
+    justify-content: center; 
+    text-align: center; 
+
+    gap: 1.6rem; 
+
+    grid-template-columns: 1fr;
+    grid-template-areas:  "ti"
+                          "b1"
+                          "b2"
+                          "b3"
+                          "b4"
+                          "b5"
+                          "b6";
+}
+@media (min-width: 768px) {    
+    #services .container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:   "ti ti" 
+                               "b1 b2"
+                               "b3 b4" 
+                               "b5 b6";
+    }
+}
+@media (min-width: 1200px) {    
+    #services .container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:  "em ti emt" 
+                              "b1 b2 b3" 
+                              "b4 b5 b6";
+    }
+}
+
+
+#service-title {
+    grid-area: ti;
+}
+#service-box-1 {
+    grid-area: b1;
+}
+#service-box-2 {
+    grid-area: b2;
+}
+#service-box-3 {
+    grid-area: b3;
+}
+#service-box-4 {
+    grid-area: b4;
+}
+#service-box-5 {
+    grid-area: b5;
+}
+#service-box-6 {
+    grid-area: b6;
+}
+
+
+
+
+
+/* appointment */
+#appointment {
+    background-color: #2BAAEC;
+    opacity: 80%;
+}
+
+#appointment .container{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+@media (min-width:768px) {#appointment .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}}
+@media (min-width:1200px) {#appointment .container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}}
+
+#appointment .booking {
+    font-family: 'Roboto Slab', serif;
+    font-size: 0.8rem;
+    color: #f3fbff;
+}
+@media (min-width:768px) {#appointment .booking {
+    font-size: 1rem;
+}}
+@media (min-width:1200px) {#appointment .booking {
+    font-size: 1.8rem;
+}}
+
+#appointment .btn-booking {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.5rem;
+    font-weight:bold;
+    color:#2BAAEC ;
+    background-color: #ffffff;
+    opacity: 100%;
+    border: none;
+    border-radius: 0.40rem; 
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+
+}
+@media (min-width:768px) {#appointment .btn-booking {
+    font-size: 0.7rem;
+    padding: 0.7rem 1.5rem;
+    margin-top: 0.5rem;
+}}
+@media (min-width:1200px) {#appointment  .btn-booking {
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
+    margin-top: 0.5rem;
+}}
+
+#appointment .btn-booking:hover {
+    background-color: #2BAAEC;
+    opacity: 80%;
+    color: #ffffff;
+    border: 1px solid #ffffff; 
+}
+
+
+
+
+/* footer */
+#footer {
+    background-color: #2BAAEC;
+}
+
+#footer .container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#footer img {
+    display: flex;
+    margin: auto;
+    height: 1rem;
+}
+
+
+ 
+
+
+
+
+
